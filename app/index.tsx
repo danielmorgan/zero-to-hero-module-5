@@ -1,4 +1,5 @@
 import { Text, View } from "react-native";
+import Galaxies from "@/modules/galaxies";
 
 export default function Index() {
   return (
@@ -9,7 +10,7 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
+      <Text>{JSON.stringify(Galaxies.getDeviceInfo())}</Text>
     </View>
   );
 }
